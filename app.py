@@ -91,8 +91,9 @@ def ask_zoya(chat_id, user_input, username):
             user_context[chat_id] = history
             return reply
         else:
-            print("❌ OpenRouter error:", result)
-            return "Oops, something glitched. Try again? 🧠"
+            print("❌ OpenRouter error:", result)  # This will show in your server logs
+            return f"API Error: {json.dumps(result)}"  # Send full error to Telegram
+
     except Exception as e:
         print("❌ Exception:", e)
         return "Something went wrong while thinking 😔"
