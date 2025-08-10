@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 BOT_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
-GUMROAD_PRODUCT_PERMALINK = "zoyapass"  # Replace with your product permalink
+GUMROAD_PRODUCT_PERMALINK = "membership"  # Replace with your product permalink
 
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/"
 
@@ -105,7 +105,7 @@ def send_message(chat_id, text):
             [{"text": "🧠 Advice"}, {"text": "🎯 Life Goals"}]
         ],
         "resize_keyboard": True,
-        "one_time_keyboard": False
+        "one_time_keyboard": True
     }
 
     payload = {
