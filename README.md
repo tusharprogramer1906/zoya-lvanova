@@ -10,7 +10,7 @@
    - **Start Command:** `gunicorn main:app`
 5. Add Environment Variables:
    - `TELEGRAM_TOKEN`: 8039860946:AAGT3Vu_DLUrZqIz1Twze4_xLcUPbC0FEPY
-   - `OPENROUTER_API_KEY`: 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
+   - `OPENROUTER_API_KEY`: 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
 
 6. After deploy, set your webhook:
    Visit:

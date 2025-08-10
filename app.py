@@ -162,7 +162,7 @@ def webhook():
     if msg.lower() == "/start":
         welcome = (
             "Hey! I'm Zoya 💫 — your AI companion for emotions, flirting, and deep chats.\n\n"
-            "You get 5 free messages. Then you can unlock more by activating a 1-day access pass.\n\n"
+            "Get my monthly membership now to get prioritized.\n\n"
             "Use /activate <license_key> after purchasing from Gumroad.\n\n"
             "Choose a vibe below or just say something 👇"
         )
